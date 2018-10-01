@@ -95,4 +95,9 @@ public class MainActivity extends FragmentActivity
                                             int[] grantResults) {
         currentFragment.onRequestPermissionsResult(requestCode,permissions,grantResults);
     }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent intent){
+        currentFragment.onActivityResult(requestCode, resultCode, intent);
+    }
 }
